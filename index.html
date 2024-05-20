@@ -27,6 +27,9 @@
                 <a href="./sitio/ingresar.html"><img src="./imagenes/perfil-antes-del-login.jpg" alt=""></a>
                 <a href="./sitio/carrito.html"><img src="./imagenes/carrito-de-compras.jpg" alt=""></a>
             </div>
+            <div class="nav-toggle">
+                <span>&#9776;</span>
+            </div>
         </nav>
     </header>
     
@@ -38,7 +41,7 @@
                     <form action="#">
                         <h3>Marca:</h3>
                         <select name="marca" id="marca">
-                            <option  value=""></option>
+                            <option  value="Selecciona una marca">Selecciona una marca</option>
                             <option  value="Motorola">Motorola</option>
                             <option value="Samsung">Samsung</option>
                             <option value="Iphone">Iphone</option>
@@ -51,7 +54,7 @@
                     <form action="#">
                         <h3>Precio:</h3>
                         <select name="rangoPrecio" id="rangoPrecio">
-                            <option  value="none"></option>
+                            <option  value="Selecciona un rango de precio">Selecciona un rango de precio</option>
                             <option value="<300m">Menos de $300.000</option>
                             <option value="300mTo600m">$300.000 a $600.000</option>
                             <option value=">600m">Más de $600.000</option>
@@ -90,5 +93,10 @@
         </div>
         <p>&copy;2024 Todos los derechos reservados - PhoneUp&reg;</p>
     </footer>
+    <script>
+        document.querySelector('.nav-toggle').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('nav-links-responsive');
+        });
+    </script>
 </body>
 </html>
