@@ -4,6 +4,18 @@ body {
   margin: 0;
   padding: 0;
   min-width: 320px; /* Evita que el body se achique más allá de 320px */
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(45deg ,  #8FFFEA, #F4D8FB,  #F4D8FB, #FBEDB3); 
+  background-size: 600% 600%;
+  position: relative;
+  animation: cambiar 6s ease infinite;
+}
+/* Función de animación CSS para darle color de fondo móvil al background de la página del formulario de contacto */
+@keyframes cambiar{
+	0%{ background-position: 0 50%; }
+	50%{ background-position: 100% 50%; }
+	100%{ background-position: 0 50%; }
 }
 
 /* Estilos del encabezado */
