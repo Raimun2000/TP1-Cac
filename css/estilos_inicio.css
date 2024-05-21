@@ -23,6 +23,19 @@ body {
 
 .logo img {
       height: 40px;
+      animation: animationLogo 2s linear 0s 1;
+}
+
+@keyframes animationLogo {
+    0%{
+      transform: rotate(0deg);
+      }
+    50%{
+      transform: rotate(-180deg);
+    }
+    100%{
+      transform: rotate(360deg);
+    }  
 }
 
 .search input {
