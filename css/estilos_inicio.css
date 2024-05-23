@@ -21,8 +21,20 @@ body {
   
   .logo img {
       height: 40px;
-  }
-  
+      animation: animationLogo 2s linear 0s 1;
+}
+
+@keyframes animationLogo {
+    0%{
+      transform: rotate(0deg);
+      }
+    50%{
+      transform: rotate(-180deg);
+    }
+    100%{
+      transform: rotate(360deg);
+    }  
+}
   .search input {
       padding: 5px;
       border: none;
@@ -134,7 +146,7 @@ body {
   .input {
       box-sizing: border-box;
       color: #191919;
-      padding: 15px 15px 15px 35px;
+      padding: 10px 15px 10px 35px;
       width: 100%;
   }
   
