@@ -12,13 +12,22 @@
             <div class="logo">
                 <img src="../imagenes/logo-del-portal-telefonia.png" alt="PhoneUp Logo">
             </div>
-           
+            <div class="input-wrapper">
+                <input type="search" class="input" placeholder="Buscar">
+                <svg xmlns="http://www.w3.org/2000/svg" class="input-icon" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+                </svg>
+            </div>
             <div class="nav-links">
-                <a href="../index.html">CELULARES</a>                
+                <a href="../index.html">CELULARES</a>
                 <a href="./accesorios.html">ACCESORIOS</a>
-                &nbsp;<strong>QUIENES SOMOS</strong>
-                <a href="./contacto.html">CONTACTO</a><a href="ingresar.html"><img src="../imagenes/perfil-antes-del-login.jpg" alt=""></a>
+                <strong>QUIENES SOMOS</strong>
+                <a href="./contacto.html">CONTACTO</a>
+                <a href="ingresar.html"><img src="../imagenes/perfil-antes-del-login.jpg" alt=""></a>
                 <a href="carrito.html"><img src="../imagenes/carrito-de-compras.jpg" alt=""></a>
+            </div>
+            <div class="nav-toggle">
+                <span>&#9776;</span>
             </div>
         </nav>
     </header>
@@ -53,12 +62,17 @@
     <footer>
         <div class="newsletter">
             <form action="#">
-            <h3>Recibí ofertas y promociones</h3>
-            <input type="email" name="email" placeholder="Ingresá tu email" required>
-            <button>Suscribirme</button>
+                <h3>Recibí ofertas y promociones</h3>
+                <input type="email" name="email" placeholder="Ingresá tu email" required>
+                <button>Suscribirme</button>
             </form>
         </div>
         <p>&copy;2024 Todos los derechos reservados - PhoneUp&reg;</p>
     </footer>
+    <script>
+        document.querySelector('.nav-toggle').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('nav-links-responsive');
+        });
+    </script>
 </body>
 </html>
