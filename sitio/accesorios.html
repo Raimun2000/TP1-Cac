@@ -13,12 +13,11 @@
                 <img src="../imagenes/logo-del-portal-telefonia.png" alt="PhoneUp Logo">
             </div>
             <div class="input-wrapper">
-                  <input type="search" class="input" placeholder="Buscá tu accesorio!">
-                
-                  <svg xmlns="http://www.w3.org/2000/svg" class="input-icon" viewBox="0 0 20 20" fill="currentColor">
+                <input type="search" class="input" placeholder="Buscá tu accesorio!">
+                <svg xmlns="http://www.w3.org/2000/svg" class="input-icon" viewBox="0 0 20 20" fill="currentColor">
                     <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
-                  </svg>
-                </div>
+                </svg>
+            </div>
             <div class="nav-links">                
                 <a href="../index.html">CELULARES</a>
                 &nbsp;<strong>ACCESORIOS</strong>
@@ -26,6 +25,9 @@
                 <a href="./contacto.html">CONTACTO</a>
                 <a href="ingresar.html"><img src="../imagenes/perfil-antes-del-login.jpg" alt=""></a>
                 <a href="carrito.html"><img src="../imagenes/carrito-de-compras.jpg" alt=""></a>
+            </div>
+            <div class="nav-toggle">
+                &#9776;
             </div>
         </nav>
     </header>
@@ -44,7 +46,7 @@
                             <option value="Carcazas">Carcazas</option>
                             <option value="Vidrio templado">Vidrios templados</option>
                             <option value="Repuestos">Repuestos</option>
-                            </select><br>
+                        </select>
                     </form>                    
                 </div>
                 <div class="filter">
@@ -83,7 +85,7 @@
     
     <footer>
         <div class="newsletter">
-            <form action="">
+            <form action="#">
             <h3>Recibí ofertas y promociones</h3>
             <input type="email" name="email" placeholder="Ingresá tu email" required>
             <button>Suscribirme</button>
@@ -91,5 +93,11 @@
         </div>
         <p>&copy;2024 Todos los derechos reservados - PhoneUp&reg;</p>
     </footer>
+
+    <script>
+        document.querySelector('.nav-toggle').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('nav-links-responsive');
+        });
+    </script>
 </body>
 </html>
